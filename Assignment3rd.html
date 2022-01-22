@@ -10,54 +10,68 @@
 
 <body>
     <h1>Assignment 3</h1>
-    <div class="!">
-        <b>
-            First Name:-
-            <input type="text" required>
-            Last Name:-
-            <input type="text" required>
+    <div>
+        <form action="form.php">
+            <b>
+                First Name:-
+                <input type="text" required>
+                Last Name:-
+                <input type="text" required>
+                <hr>
+            </b>
+        </form>
+    </div>
+
+    <div>
+        <form action="form.php">
+            <b>
+                I love:-
+                <br>
+                <br>
+            </b>
+            <input type="radio"> Eating Chickens <br><br>
+            <input type="radio"> Travelling <br><br>
+            <input type="radio"> Developing <br><br>
             <hr>
-        </b>
+        </form>
     </div>
+
+    <form action="form.php">
+        <input type="checkbox"> I have a Laptop. <br>
+        <input type="checkbox"> I have a Mobile Phone. <br>
+        <input type="checkbox"> I have a Desktop. <br>
+        <hr>
+    </form>
 
     <div>
-        <b>
-            I love:-
-            <br>
-            <br>
-        </b>
-        <input type="radio"> Eating Chickens <br><br>
-        <input type="radio"> Travelling <br><br>
-        <input type="radio"> Developing <br><br>
-        <hr>
+        <form action="form.php">
+            <b>
+                Email:-
+                <input type="email" required>
+                Password:-
+                <input type="password" minlength="8" required>
+            </b>
+            <hr>
+        </form>
     </div>
 
-    <input type="checkbox"> I have a Laptop. <br>
-    <input type="checkbox"> I have a Mobile Phone. <br>
-    <input type="checkbox"> I have a Desktop. <br>
-    <hr>
-
-    <div>
-        <b>
-            Email:-
-            <input type="email" required >
-            Password:-
-            <input type="password" minlength="8" required>
+    <form action="form.php">
+        <label for="age">Tell us your age:-</label>
+        <select name="age" id="age">
+            <option value="no-age">Select Age</option>
+            <option value="1-17">1-17</option>
+            <option value="18-30">18-30</option>
+            <option value="31-45">31-45</option>
+            <option value="46-60">46-60</option>
+        </select>
         </b>
         <hr>
-    </div>
+    </form>
 
-    <label for="age">Tell us your age:-</label>
-    <select name="age" id="age">
-        <option value="">Select Age</option>
-        <option value="">1-17</option>
-        <option value="">18-30</option>
-        <option value="">31-45</option>
-        <option value="">46-60</option>
-    </select>     
-    </b>
-    <hr>
+    <form action="form.php">
+        <input type="submit">
+    </form>
 
-    <input type="submit">
 </body>
+
 </html>
